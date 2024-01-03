@@ -1,0 +1,155 @@
+﻿
+@{
+    ViewBag.Title = "view_leave";
+    Layout = "~/Views/StaffLayout.cshtml";
+}
+
+<div class="mobile-menu-overlay"></div>
+
+<div class="main-container">
+    <div class="pd-ltr-20">
+        <div class="min-height-200px">
+            <div class="page-header">
+                <div class="row">
+                    <div class="col-md-6 col-sm-12">
+                        <div class="title">
+                            <h4>LEAVE DETAILS</h4>
+                        </div>
+                        <nav aria-label="breadcrumb" role="navigation">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="admin_dashboard.php">Home</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Leave</li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pd-20 card-box mb-30">
+                <div class="clearfix">
+                    <div class="pull-left">
+                        <h4 class="text-blue h4">Leave Details</h4>
+                        <p class="mb-20"></p>
+                    </div>
+                </div>
+                <form method="post" action="">
+
+
+
+                    <div class="row">
+                        <div class="col-md-4 col-sm-12">
+                            <div class="form-group">
+                                <label style="font-size:16px;"><b>Full Name</b></label>
+                                <input type="text" class="selectpicker form-control" data-style="btn-outline-primary" readonly value="Json , Code">
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-12">
+                            <div class="form-group">
+                                <label style="font-size:16px;"><b>Email Address</b></label>
+                                <input type="text" class="selectpicker form-control" data-style="btn-outline-info" readonly value="Employee@gmail.com">
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-12">
+                            <div class="form-group">
+                                <label style="font-size:16px;"><b>Gender</b></label>
+                                <input type="text" class="selectpicker form-control" data-style="btn-outline-success" readonly value="Female">
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-12">
+                            <div class="form-group">
+                                <label style="font-size:16px;"><b>Phone Number</b></label>
+                                <input type="text" class="selectpicker form-control" data-style="btn-outline-primary" readonly value="0848494949">
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-12">
+                            <div class="form-group">
+                                <label style="font-size:16px;"><b>Leave Type</b></label>
+                                <input type="text" class="selectpicker form-control" data-style="btn-outline-info" readonly value="Annual Leave">
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-12">
+                            <div class="form-group">
+                                <label style="font-size:16px;"><b>Applied Date</b></label>
+                                <input type="text" class="selectpicker form-control" data-style="btn-outline-success" readonly value="2022-09-09">
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 col-sm-12">
+                            <div class="form-group">
+                                <label style="font-size:16px;"><b>Applied No. of Days</b></label>
+                                <input type="text" class="selectpicker form-control" data-style="btn-outline-info" readonly value="3">
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-12">
+                            <div class="form-group">
+                                <label style="font-size:16px;"><b>Available No. of Days</b></label>
+                                <input type="text" class="selectpicker form-control" data-style="btn-outline-info" readonly value="5">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label style="font-size:16px;"><b>Leave Period</b></label>
+                                <input type="text" class="selectpicker form-control" data-style="btn-outline-info" readonly value="From 2022-09-09 to 2022-90-88">
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="form-group row">
+                        <label style="font-size:16px;" class="col-sm-12 col-md-2 col-form-label"><b>Leave Reason</b></label>
+                        <div class="col-sm-12 col-md-10">
+                            <textarea name="" class="form-control text_area" readonly type="text">To Travel</textarea>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label style="font-size:16px;" class="col-sm-12 col-md-2 col-form-label"><b>HOD Remarks</b></label>
+                        <div class="col-sm-12 col-md-10">
+                            <input type="text" class="selectpicker form-control" data-style="btn-outline-primary" readonly value="Waiting for Approval">
+
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label style="font-size:16px;" class="col-sm-12 col-md-2 col-form-label"><b>Reg. Remarks</b></label>
+                        <div class="col-sm-12 col-md-10">
+
+                            <input type="text" class="selectpicker form-control" data-style="btn-outline-primary" readonly value="<?php echo " Admin Waiting for Approval"; ?>">
+
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label style="font-size:16px;"><b>Action Taken Date</b></label>
+                                <input type="text" class="selectpicker form-control" data-style="btn-outline-primary" readonly value="NA">
+
+
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label style="font-size:16px;"><b>Leave Status From HOD</b></label>
+
+                                <input type="text" style="color: green;" class="selectpicker form-control" data-style="btn-outline-primary" readonly value="Approved">
+
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label style="font-size:16px;"><b>Admin Status</b></label>
+
+                                <input type="text" style="color: green;" class="selectpicker form-control" data-style="btn-outline-primary" readonly value="Approved">
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                </form>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+

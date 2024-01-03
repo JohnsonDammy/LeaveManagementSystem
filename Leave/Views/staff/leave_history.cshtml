@@ -1,0 +1,119 @@
+﻿
+@{
+    ViewBag.Title = "leave_history";
+    Layout = "~/Views/StaffLayout.cshtml";
+}
+
+<h2>leave_history</h2>
+<div class="mobile-menu-overlay"></div>
+
+<div class="main-container">
+    <div class="pd-ltr-20">
+        <div class="title pb-20">
+            <h2 class="h3 mb-0">Leave Breakdown</h2>
+        </div>
+        <div class="row pb-10">
+            <div class="col-xl-3 col-lg-3 col-md-6 mb-20">
+                <div class="card-box height-100-p widget-style3">
+
+                    <div class="d-flex flex-wrap">
+                        <div class="widget-data">
+                            <div class="weight-700 font-24 text-dark">7</div>
+                            <div class="font-14 text-secondary weight-500">All Applied Leave</div>
+                        </div>
+                        <div class="widget-icon">
+                            <div class="icon" data-color="#00eccf"><i class="icon-copy dw dw-user-2"></i></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-6 mb-20">
+                <div class="card-box height-100-p widget-style3">
+
+
+                    <div class="d-flex flex-wrap">
+                        <div class="widget-data">
+                            <div class="weight-700 font-24 text-dark">4</div>
+                            <div class="font-14 text-secondary weight-500">Approved</div>
+                        </div>
+                        <div class="widget-icon">
+                            <div class="icon" data-color="#09cc06"><span class="icon-copy fa fa-hourglass"></span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-6 mb-20">
+                <div class="card-box height-100-p widget-style3">
+
+
+                    <div class="d-flex flex-wrap">
+                        <div class="widget-data">
+                            <div class="weight-700 font-24 text-dark">5</div>
+                            <div class="font-14 text-secondary weight-500">Pending</div>
+                        </div>
+                        <div class="widget-icon">
+                            <div class="icon"><i class="icon-copy fa fa-hourglass-end" aria-hidden="true"></i></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-6 mb-20">
+                <div class="card-box height-100-p widget-style3">
+
+
+                    <div class="d-flex flex-wrap">
+                        <div class="widget-data">
+                            <div class="weight-700 font-24 text-dark">3</div>
+                            <div class="font-14 text-secondary weight-500">Rejected</div>
+                        </div>
+                        <div class="widget-icon">
+                            <div class="icon" data-color="#ff5b5b"><i class="icon-copy fa fa-hourglass-o" aria-hidden="true"></i></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card-box mb-30">
+            <div class="pd-20">
+                <h2 class="text-blue h4">ALL MY LEAVE</h2>
+            </div>
+            <div class="pb-20">
+                <table class="data-table table stripe hover nowrap">
+                    <thead>
+                        <tr>
+                            <th class="table-plus">LEAVE TYPE</th>
+                            <th>DATE FROM</th>
+                            <th>DATE TO</th>
+                            <th>NO. OF DAYS</th>
+                            <th>HOD STATUS</th>
+                            <th>REG. STATUS</th>
+                            <th class="datatable-nosort">ACTION</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+
+                            <td>Annual Leave</td>
+                            <td>2022-09-09</td>
+                            <td>2022-09-12</td>
+                            <td>3</td>
+                            <td>
+                                Approved
+                            </td>
+                            <td>
+                                Pending
+                            </td>
+                            <td>
+                                <div class="table-actions">
+                                    <a title="VIEW" href="view_leave.php?edit=2" data-color="#265ed7"><i class="icon-copy dw dw-eye"></i></a>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </div>
+</div>
